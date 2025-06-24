@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { LoginForm } from "./components/LoginForm";
+import DonorDetails from "./components/DonorDetails";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -13,12 +14,8 @@ function App() {
   return (
     <>
       {isAuthenticated ? (
-        <div className="welcome-message">
-          <h1>Welcome back to SquareDonations!</h1>
-          <p>
-            Your donations are making a difference.{" "}
-            {localStorage.getItem("donorEmail")}
-          </p>
+        <div>
+          <DonorDetails />
         </div>
       ) : (
         <LoginForm />

@@ -69,6 +69,7 @@ export const LoginForm = () => {
       // Reset form and close modal
       setFormData({ email: "", password: "" });
       localStorage.setItem("donorEmail", formData.email);
+      window.location.reload(); // Reload to show donor details
       setErrors({});
     } catch (error) {
       console.error("Login failed:", error);

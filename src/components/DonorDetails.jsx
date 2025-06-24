@@ -111,7 +111,7 @@ const DonorDetails = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
+    <div className="flex items-center justify-center min-h-screen bg-transparent p-4">
       <div className="bg-white rounded-lg shadow-lg max-w-6xl mx-auto">
         {/* Header */}
         <div className="flex items-center justify-center p-6 border-b">

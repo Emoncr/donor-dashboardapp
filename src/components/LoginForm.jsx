@@ -66,11 +66,6 @@ export const LoginForm = () => {
     try {
       // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1000));
-
-      // Simulate successful login
-      console.log("Login successful!", formData);
-      alert("Login successful! Welcome back to SquareDonations.");
-
       // Reset form and close modal
       setFormData({ email: "", password: "" });
       localStorage.setItem("donorEmail", formData.email);
@@ -90,7 +85,7 @@ export const LoginForm = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex items-center justify-center h-screen !bg-transparent">
       <div className="bg-white rounded-lg shadow-xl w-full max-w-md ">
         {/* Header */}
         <div className="flex items-center justify-center p-6 border-b">

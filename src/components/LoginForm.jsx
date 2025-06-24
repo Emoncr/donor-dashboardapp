@@ -90,10 +90,10 @@ export const LoginForm = () => {
   };
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center h-screen">
       <div className="bg-white rounded-lg shadow-xl w-full max-w-md ">
         {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b">
+        <div className="flex items-center justify-center p-6 border-b">
           <div className="flex items-center space-x-3">
             <div className="flex items-center justify-center w-10 h-10 bg-blue-600 rounded-lg">
               <Heart className="w-6 h-6 text-white fill-current" />

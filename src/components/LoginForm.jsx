@@ -65,7 +65,7 @@ export const LoginForm = () => {
 
     try {
       // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      await new Promise((resolve) => setTimeout(resolve, 1000));
 
       // Simulate successful login
       console.log("Login successful!", formData);
@@ -73,6 +73,7 @@ export const LoginForm = () => {
 
       // Reset form and close modal
       setFormData({ email: "", password: "" });
+      localStorage.setItem("donorEmail", formData.email);
       setErrors({});
     } catch (error) {
       console.error("Login failed:", error);
